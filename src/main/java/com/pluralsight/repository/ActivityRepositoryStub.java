@@ -8,11 +8,11 @@ import com.pluralsight.model.User;
 
 public class ActivityRepositoryStub implements ActivityRepository {
 
-	@Override
 	public void create(Activity activity) {
 		// should issue an insert statement to the db
 	}
-
+	
+	
 	public List<Activity> findAllActivites() {
 		List<Activity> activities = new ArrayList<Activity>();
 		Activity activity1 = new Activity();
@@ -47,6 +47,21 @@ public class ActivityRepositoryStub implements ActivityRepository {
 		activity1.setUser(user);
 
 		return activity1;
+	}
+
+	public Activity update(Activity activity) {
+		// search the database to see if we have an activity with that id already
+		// select * from Activity where id = ?
+		// if resultSet size == 0
+		// insert into Activity table
+		// else
+		// update the Activity table
+		return activity;		
+	}
+
+	public void delete(String activityId) {
+		// delete from activity where activityId = parameter we passed in
+		
 	}
 
 }
