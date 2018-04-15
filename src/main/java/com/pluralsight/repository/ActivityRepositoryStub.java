@@ -31,6 +31,10 @@ public class ActivityRepositoryStub implements ActivityRepository {
 	}
 
 	public Activity findActivity(String activityId) {
+		if(activityId.equals("7777")) {
+			return null;
+		}
+		
 		Activity activity1 = new Activity();
 		activity1.setId("1234");
 		activity1.setDescription("Swimming");
