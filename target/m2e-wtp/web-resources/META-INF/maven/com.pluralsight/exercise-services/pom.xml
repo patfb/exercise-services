@@ -19,8 +19,8 @@
 				<version>2.5.1</version>
 				<inherited>true</inherited>
 				<configuration>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 		</plugins>
@@ -58,6 +58,26 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.10</version>
+		</dependency>
+		<!-- Oleaster Matchers -->
+		<dependency>
+			<groupId>com.mscharhag.oleaster</groupId>
+			<artifactId>oleaster-matcher</artifactId>
+			<version>0.2.0</version>
+		</dependency>
+
+		<!-- Oleaster JUnit runner -->
+		<dependency>
+			<groupId>com.mscharhag.oleaster</groupId>
+			<artifactId>oleaster-runner</artifactId>
+			<version>0.2.0</version>
+		</dependency>
+
+		<!-- Of course a JUnit runner can only be used with JUnit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.11</version>
 		</dependency>
 	</dependencies>
 	<properties>
